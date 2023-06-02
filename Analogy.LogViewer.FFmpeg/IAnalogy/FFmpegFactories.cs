@@ -16,18 +16,18 @@ namespace Analogy.LogViewer.FFmpeg.IAnalogy
         public override Image LargeImage { get; set; } = Resources.ffmpeg32x32;
         public override IEnumerable<IAnalogyChangeLog> ChangeLog { get; set; } = GetChangeLog();
         public override IEnumerable<string> Contributors { get; set; } = new List<string> { "Lior Banai" };
-        public override string About { get; set; } = "Intuitive Log Parsers";
+        public override string About { get; set; } = "FFmpeg Tools";
 
         private static IEnumerable<IAnalogyChangeLog> GetChangeLog()
         {
-            yield return new AnalogyChangeLog("Initial version", AnalogChangeLogType.None, "Lior Banai", new DateTime(2022, 07, 15));
+            yield return new AnalogyChangeLog("Initial version", AnalogChangeLogType.None, "Lior Banai", new DateTime(2023, 06, 02));
         }
     }
 
     public class DataSourceFactory : DataProvidersFactory
     {
         public override Guid FactoryId { get; set; } = FFmpegFactories.Id;
-        public override string Title { get; set; } = "Intuitive Logs";
+        public override string Title { get; set; } = "FFmpeg Tools";
 
         public override IEnumerable<IAnalogyDataProvider> DataProviders { get; set; } = new List<IAnalogyDataProvider>
         {

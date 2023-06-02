@@ -16,23 +16,15 @@ namespace Analogy.LogViewer.FFmpeg.IAnalogy
 
         public IEnumerable<IAnalogyCustomAction> Actions { get; } = new List<IAnalogyCustomAction>
         {
-            new Action1()
+            //new Action1()
         };
 
         private class Action1 : IAnalogyCustomAction
         {
-            private static string hostingEXE = @"C:\Kalpa\Hosting\Kalpa.Wpf.exe";
 
             public Action Action { get; } = () =>
             {
-                try
-                {
-                    
-                }
-                catch (Exception e)
-                {
-                    LogManager.Instance.LogError($"Error starting {hostingEXE}: {e.Message}", nameof(Action1));
-                }
+               
             };
 
             public Guid Id { get; set; } = new Guid("b6c5410d-5ef5-4b1c-84f1-0dcd7eac3966");

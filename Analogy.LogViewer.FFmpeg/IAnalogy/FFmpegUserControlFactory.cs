@@ -12,7 +12,6 @@ namespace Analogy.LogViewer.FFmpeg.IAnalogy
 
         public IEnumerable<IAnalogyCustomUserControl> UserControls { get; } = new List<IAnalogyCustomUserControl>
         {
- 
             new FFTools()
         };
 

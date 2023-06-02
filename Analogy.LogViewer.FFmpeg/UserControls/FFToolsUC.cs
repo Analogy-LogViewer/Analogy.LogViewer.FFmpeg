@@ -85,7 +85,7 @@ namespace Analogy.LogViewer.FFmpeg.UserControls
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-       
+
 
         }
     }
