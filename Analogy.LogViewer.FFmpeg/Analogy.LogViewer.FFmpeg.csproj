@@ -18,7 +18,6 @@
 		<Product>Analogy.LogViewer.FFmpeg</Product>
 		<Description>Analogy Log Viewer FFmpeg Tools</Description>
 		<Copyright>Lior Banai © 2023</Copyright>
-		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<Authors>Lior Banai</Authors>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.FFmpeg</PackageProjectUrl>
@@ -27,7 +26,7 @@
 		<PackageReleaseNotes></PackageReleaseNotes>
 		<PackageIcon>AnalogyIcon.png</PackageIcon>
 		<PackageIconUrl />
-		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
 		<Nullable>enable</Nullable>
 		<LangVersion>latest</LangVersion>
