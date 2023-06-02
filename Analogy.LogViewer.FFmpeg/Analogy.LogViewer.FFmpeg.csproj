@@ -400,11 +400,6 @@
 		<None Include="Resources\settings.png" />
 	</ItemGroup>
 	<ItemGroup>
-	  <ProjectReference Include="..\..\Libraries\IpcBridge\IpcBridge.csproj" />
-	  <ProjectReference Include="..\..\Libraries\MediaManager.CommonControls\MediaManager.CommonControls.csproj" />
-	  <ProjectReference Include="..\..\Libraries\MediaManager.Logging\MediaManager.Logging.csproj" />
-	</ItemGroup>
-	<ItemGroup>
 		<None Update="Properties\Settings.settings">
 			<Generator>SettingsSingleFileGenerator</Generator>
 			<LastGenOutput>Settings.Designer.cs</LastGenOutput>

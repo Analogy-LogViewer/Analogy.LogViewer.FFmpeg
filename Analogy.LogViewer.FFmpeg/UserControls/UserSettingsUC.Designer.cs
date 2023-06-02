@@ -80,7 +80,6 @@
             this.deleteKeyButton.TabIndex = 4;
             this.deleteKeyButton.Text = "Delete Private key from CSP";
             this.deleteKeyButton.UseVisualStyleBackColor = true;
-            this.deleteKeyButton.Click += new System.EventHandler(this.deleteKeyButton_Click);
             // 
             // exportPairKeysButton
             // 
@@ -93,7 +92,6 @@
             this.exportPairKeysButton.TabIndex = 5;
             this.exportPairKeysButton.Text = "Generate and export a pair of keys";
             this.exportPairKeysButton.UseVisualStyleBackColor = true;
-            this.exportPairKeysButton.Click += new System.EventHandler(this.exportPairKeysButton_Click);
             // 
             // exportCurrPrivateKeysButton
             // 
@@ -106,7 +104,6 @@
             this.exportCurrPrivateKeysButton.TabIndex = 1;
             this.exportCurrPrivateKeysButton.Text = "Export current private key";
             this.exportCurrPrivateKeysButton.UseVisualStyleBackColor = true;
-            this.exportCurrPrivateKeysButton.Click += new System.EventHandler(this.exportCurrPrivateKeysButton_Click);
             // 
             // exportCurrentPublicKeyButton
             // 
@@ -119,7 +116,6 @@
             this.exportCurrentPublicKeyButton.TabIndex = 3;
             this.exportCurrentPublicKeyButton.Text = "Export current public key";
             this.exportCurrentPublicKeyButton.UseVisualStyleBackColor = true;
-            this.exportCurrentPublicKeyButton.Click += new System.EventHandler(this.exportCurrentPublicKeyButton_Click);
             // 
             // importPrivateKeyButton
             // 
@@ -132,7 +128,6 @@
             this.importPrivateKeyButton.TabIndex = 0;
             this.importPrivateKeyButton.Text = "Import Private key from file to CSP";
             this.importPrivateKeyButton.UseVisualStyleBackColor = true;
-            this.importPrivateKeyButton.Click += new System.EventHandler(this.importPrivateKeyButton_Click);
             // 
             // openFileDialog1
             // 

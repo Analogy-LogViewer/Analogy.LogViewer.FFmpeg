@@ -10,19 +10,8 @@ namespace Analogy.LogViewer.FFmpeg.Managers
             new Lazy<UserSettingsManager>(() => new UserSettingsManager());
 
         public static UserSettingsManager Instance { get; } = _instance.Value;
-        private string FileName { get; } = "IntuitiveSettings.dat";
+        private string FileName { get; } = "AnalogyFFmpegSettings.dat";
 
-        public string SubscribePort
-        {
-            get => Settings.SubscribePort;
-            set => Settings.SubscribePort = value;
-        }
-
-        public string PublishPort
-        {
-            get => Settings.PublishPort;
-            set => Settings.PublishPort = value;
-        }
         public string FFmpegBinaryFolder 
         {
             get => Settings.FFmpegBinaryFolder;

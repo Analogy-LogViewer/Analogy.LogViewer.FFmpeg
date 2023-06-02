@@ -85,16 +85,7 @@ namespace Analogy.LogViewer.FFmpeg.UserControls
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            string inputFile = txtbVideoFile.Text;
-
-            if (File.Exists(inputFile))
-            {
-                Form video = new Form();
-                VideoPlaybackUC uc = new VideoPlaybackUC(inputFile);
-                video.Controls.Add(uc);
-                uc.Dock = DockStyle.Fill;
-                video.Show();
-            }
+       
 
         }
     }
