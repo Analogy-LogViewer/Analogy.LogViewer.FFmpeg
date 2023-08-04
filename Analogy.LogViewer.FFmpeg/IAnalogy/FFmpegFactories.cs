@@ -20,7 +20,7 @@ namespace Analogy.LogViewer.FFmpeg.IAnalogy
 
         private static IEnumerable<IAnalogyChangeLog> GetChangeLog()
         {
-            yield return new AnalogyChangeLog("Initial version", AnalogChangeLogType.None, "Lior Banai", new DateTime(2023, 06, 02));
+            yield return new AnalogyChangeLog("Initial version", AnalogChangeLogType.None, "Lior Banai", new DateTime(2023, 06, 02), "");
         }
     }
 

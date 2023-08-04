@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using Analogy.Interfaces;
 using Analogy.LogViewer.FFmpeg.Properties;
 using Analogy.LogViewer.FFmpeg.UserControls;
+using Microsoft.Extensions.Logging;
 
 namespace Analogy.LogViewer.FFmpeg.IAnalogy
 {
@@ -23,7 +24,7 @@ namespace Analogy.LogViewer.FFmpeg.IAnalogy
             
         }
 
-        public override void CreateUserControl(IAnalogyLogger logger)
+        public override void CreateUserControl(ILogger logger)
         {
             DataProviderSettings = new UserSettingsUC();
         }

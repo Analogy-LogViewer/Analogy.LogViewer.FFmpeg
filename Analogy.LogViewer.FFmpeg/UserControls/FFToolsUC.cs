@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using Analogy.Interfaces;
 using Analogy.LogViewer.FFmpeg.Managers;
 using FFMpegCore;
+using Microsoft.Extensions.Logging;
 
 namespace Analogy.LogViewer.FFmpeg.UserControls
 {
@@ -15,7 +16,7 @@ namespace Analogy.LogViewer.FFmpeg.UserControls
             InitializeComponent();
         }
 
-        public FFToolsUC(IAnalogyLogger logger) : this()
+        public FFToolsUC(ILogger logger) : this()
         {
 
         }

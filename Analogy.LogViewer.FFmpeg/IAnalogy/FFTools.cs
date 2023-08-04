@@ -6,6 +6,7 @@ using Analogy.Interfaces;
 using Analogy.Interfaces.DataTypes;
 using Analogy.LogViewer.FFmpeg.Properties;
 using Analogy.LogViewer.FFmpeg.UserControls;
+using Microsoft.Extensions.Logging;
 
 namespace Analogy.LogViewer.FFmpeg.IAnalogy
 {
@@ -18,7 +19,7 @@ namespace Analogy.LogViewer.FFmpeg.IAnalogy
         public string Title { get; set; } = "FF Tools";
         public AnalogyToolTip? ToolTip { get; set; }
 
-        public Task InitializeUserControl(Control hostingControl, IAnalogyLogger logger)
+        public Task InitializeUserControl(Control hostingControl, ILogger logger)
         {
             UserControl = new FFToolsUC(logger);
             return Task.CompletedTask;
