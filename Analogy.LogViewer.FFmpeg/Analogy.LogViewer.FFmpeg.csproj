@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 	<PropertyGroup>
 		<TargetFrameworks>net7.0-windows;net6.0-windows;net48;net471</TargetFrameworks>
-		<VersionPrefix>5.0.1.0</VersionPrefix>
+		<VersionPrefix>5.0.3.0</VersionPrefix>
 		<VersionSuffix></VersionSuffix>
 		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
 		<AssemblyTitle>Analogy.LogViewer.FFmpeg</AssemblyTitle>
@@ -59,8 +59,8 @@
 		</EmbeddedResource>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Analogy.LogViewer.Template" Version="5.0.2" />
-		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="5.0.0" />
+		<PackageReference Include="Analogy.LogViewer.Template" Version="5.0.3" />
+		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="5.0.3" />
 		<PackageReference Include="FFMpegCore" Version="5.1.0" />
 		<!--<PackageReference Include="LibVLCSharp.WinForms" Version="3.7.0" />
 		<PackageReference Include="VideoLAN.LibVLC.Windows" Version="3.0.18" />-->
