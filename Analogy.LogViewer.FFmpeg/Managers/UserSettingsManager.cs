@@ -10,7 +10,8 @@ namespace Analogy.LogViewer.FFmpeg.Managers
             new Lazy<UserSettingsManager>(() => new UserSettingsManager());
 
         public static UserSettingsManager Instance { get; } = _instance.Value;
-        private string FileName { get; } = "AnalogyFFmpegSettings.dat";
+        private string LocalSettingFileName { get; } = "AnalogyFFmpegSettings.json";
+        public string FileName => Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Analogy.LogViewer", LocalSettingFileName);
 
         public string FFmpegBinaryFolder 
         {
