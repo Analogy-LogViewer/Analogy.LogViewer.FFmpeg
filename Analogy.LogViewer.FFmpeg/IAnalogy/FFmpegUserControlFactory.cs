@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using Analogy.Interfaces;
+﻿using Analogy.Interfaces;
 using Analogy.Interfaces.Factories;
+using System;
+using System.Collections.Generic;
 
 namespace Analogy.LogViewer.FFmpeg.IAnalogy
 {
@@ -12,9 +12,7 @@ namespace Analogy.LogViewer.FFmpeg.IAnalogy
 
         public IEnumerable<IAnalogyCustomUserControl> UserControls { get; } = new List<IAnalogyCustomUserControl>
         {
-            new FFTools()
+            new FFTools(),
         };
-
-
     }
 }

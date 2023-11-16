@@ -1,11 +1,11 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-using System.Windows.Forms;
-using Analogy.Interfaces;
+﻿using Analogy.Interfaces;
 using Analogy.LogViewer.FFmpeg.Managers;
 using FFMpegCore;
 using Microsoft.Extensions.Logging;
+using System;
+using System.IO;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace Analogy.LogViewer.FFmpeg.UserControls
 {
@@ -18,7 +18,6 @@ namespace Analogy.LogViewer.FFmpeg.UserControls
 
         public FFToolsUC(ILogger logger) : this()
         {
-
         }
         private void FFToolsUC_Load(object sender, EventArgs e)
         {
@@ -69,8 +68,6 @@ namespace Analogy.LogViewer.FFmpeg.UserControls
                         packets.Select(p =>
                             $"pts time: {p.PtsTime}. Dts time: {p.DtsTime}. Duration: {p.Duration}."));
                 }
-
-
             }
             catch (Exception exception)
             {
@@ -86,8 +83,6 @@ namespace Analogy.LogViewer.FFmpeg.UserControls
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-
-
         }
     }
 }

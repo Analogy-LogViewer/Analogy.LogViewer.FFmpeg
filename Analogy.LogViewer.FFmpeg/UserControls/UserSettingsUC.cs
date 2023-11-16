@@ -1,13 +1,12 @@
-﻿using System;
+﻿using Analogy.LogViewer.FFmpeg.Managers;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
-using Analogy.LogViewer.FFmpeg.Managers;
 
 namespace Analogy.LogViewer.FFmpeg.UserControls
 {
     public partial class UserSettingsUC : UserControl
     {
-
         public UserSettingsUC()
         {
             InitializeComponent();

@@ -1,6 +1,6 @@
-﻿using System;
+﻿using FFMpegCore;
+using System;
 using System.Windows.Forms;
-using FFMpegCore;
 
 namespace Analogy.LogViewer.FFmpeg.UserControls
 {
@@ -25,7 +25,6 @@ namespace Analogy.LogViewer.FFmpeg.UserControls
             tbStreamDimension.Text = $@"{Stream.Height} x {Stream.Width}";
             tbStreamFrameRate.Text = Stream.FrameRate.ToString();
             tbStreamPixelFormat.Text = Stream.PixelFormat;
-
         }
     }
 }

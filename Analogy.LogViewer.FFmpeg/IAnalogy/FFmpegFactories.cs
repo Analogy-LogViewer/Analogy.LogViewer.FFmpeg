@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using Analogy.Interfaces;
+﻿using Analogy.Interfaces;
 using Analogy.LogViewer.FFmpeg.Properties;
 using Analogy.LogViewer.Template;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
 
 namespace Analogy.LogViewer.FFmpeg.IAnalogy
 {
@@ -31,7 +31,6 @@ namespace Analogy.LogViewer.FFmpeg.IAnalogy
 
         public override IEnumerable<IAnalogyDataProvider> DataProviders { get; set; } = new List<IAnalogyDataProvider>
         {
-
         };
     }
 }

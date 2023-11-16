@@ -1,18 +1,17 @@
-﻿using System;
+﻿using Analogy.Interfaces;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using Analogy.Interfaces;
-using Newtonsoft.Json;
 
 namespace Analogy.LogViewer.FFmpeg
 {
     public static class Utils
     {
-        //
         /// <summary>
         /// 
         /// </summary>
@@ -30,7 +29,7 @@ namespace Analogy.LogViewer.FFmpeg
                 }
 
                 string data = JsonConvert.SerializeObject(item);
-                File.WriteAllText(filename,data);
+                File.WriteAllText(filename, data);
             }
             catch (SerializationException ex)
             {
@@ -46,7 +45,6 @@ namespace Analogy.LogViewer.FFmpeg
         /// <returns></returns>
         public static T DeSerializeJsonFile<T>(string filename) where T : class, new()
         {
-            var formatter = new BinaryFormatter();
             if (File.Exists(filename))
             {
                 try
@@ -66,7 +64,6 @@ namespace Analogy.LogViewer.FFmpeg
         {
             string file = Path.GetFileName(fileName);
             return fileName.Equals(file) ? fileName : $"{file} ({fileName})";
-
         }
         public abstract class Saver
         {
@@ -75,7 +72,6 @@ namespace Analogy.LogViewer.FFmpeg
                 List<AnalogyLogMessage> messages = new List<AnalogyLogMessage>();
                 foreach (DataRow dtr in data.Rows)
                 {
-
                     AnalogyLogMessage log = (AnalogyLogMessage)dtr["Object"];
                     messages.Add(log);
                 }

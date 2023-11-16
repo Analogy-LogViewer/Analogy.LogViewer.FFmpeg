@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using Analogy.Interfaces;
+﻿using Analogy.Interfaces;
 using Analogy.Interfaces.DataTypes;
 using Analogy.Interfaces.Factories;
 using Analogy.LogViewer.FFmpeg.Properties;
 using Analogy.LogViewer.Template.Managers;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
 
 namespace Analogy.LogViewer.FFmpeg.IAnalogy
 {
@@ -21,10 +21,8 @@ namespace Analogy.LogViewer.FFmpeg.IAnalogy
 
         private class Action1 : IAnalogyCustomAction
         {
-
             public Action Action { get; } = () =>
             {
-               
             };
 
             public Guid Id { get; set; } = new Guid("b6c5410d-5ef5-4b1c-84f1-0dcd7eac3966");
@@ -34,6 +32,5 @@ namespace Analogy.LogViewer.FFmpeg.IAnalogy
             public AnalogyCustomActionType Type { get; } = AnalogyCustomActionType.BelongsToProvider;
             public AnalogyToolTip? ToolTip { get; set; }
         }
-        
     }
 }

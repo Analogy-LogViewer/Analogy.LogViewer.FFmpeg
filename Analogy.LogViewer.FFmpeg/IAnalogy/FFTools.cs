@@ -1,12 +1,12 @@
-﻿using System;
-using System.Drawing;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Analogy.Interfaces;
+﻿using Analogy.Interfaces;
 using Analogy.Interfaces.DataTypes;
 using Analogy.LogViewer.FFmpeg.Properties;
 using Analogy.LogViewer.FFmpeg.UserControls;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Drawing;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Analogy.LogViewer.FFmpeg.IAnalogy
 {
@@ -27,9 +27,7 @@ namespace Analogy.LogViewer.FFmpeg.IAnalogy
 
         public Task UserControlRemoved()
         {
-
             return Task.CompletedTask;
         }
-
     }
 }

@@ -31,7 +31,6 @@ namespace Analogy.LogViewer.FFmpeg.Managers
                 try
                 {
                     Settings = Utils.DeSerializeJsonFile<UserSettings>(FileName);
-
                 }
                 catch (Exception)
                 {
