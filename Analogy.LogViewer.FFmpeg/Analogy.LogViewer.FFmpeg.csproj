@@ -42,7 +42,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Analogy.LogViewer.Template" Version="7.0.0" />
-		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="7.0.0.1" />
+		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="7.1.0" />
 		<PackageReference Include="FFMpegCore" Version="5.1.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="System.Threading.Tasks.Extensions">
