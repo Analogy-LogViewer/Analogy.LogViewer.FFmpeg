@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 	<PropertyGroup>
 		<TargetFrameworks>net9.0-windows;net8.0-windows;net48</TargetFrameworks>
-		<VersionPrefix>7.1.1</VersionPrefix>
+		<VersionPrefix>7.2.0</VersionPrefix>
 		<VersionSuffix></VersionSuffix>
 		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
 		<AssemblyTitle>Analogy.LogViewer.FFmpeg</AssemblyTitle>
@@ -41,8 +41,8 @@
 		</EmbeddedResource>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Analogy.LogViewer.Template" Version="7.1.0" />
-		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="7.1.0" />
+		<PackageReference Include="Analogy.LogViewer.Template" Version="7.2.0" />
+		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="7.2.0" />
 		<PackageReference Include="FFMpegCore" Version="5.1.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="System.Text.Json" Version="9.0.0" />
