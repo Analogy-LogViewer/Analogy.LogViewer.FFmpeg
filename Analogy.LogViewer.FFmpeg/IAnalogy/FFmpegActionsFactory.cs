@@ -1,6 +1,8 @@
 ﻿using Analogy.Interfaces;
 using Analogy.Interfaces.DataTypes;
 using Analogy.Interfaces.Factories;
+using Analogy.Interfaces.WinForms;
+using Analogy.Interfaces.WinForms.Factories;
 using Analogy.LogViewer.FFmpeg.Properties;
 using Analogy.LogViewer.Template.Managers;
 using System;
@@ -9,12 +11,13 @@ using System.Drawing;
 
 namespace Analogy.LogViewer.FFmpeg.IAnalogy
 {
-    public class FFmpegActionsFactory : IAnalogyCustomActionsFactory
+    public class FFmpegActionsFactory : IAnalogyCustomActionsFactoryWinForms
     {
         public Guid FactoryId { get; set; } = FFmpegFactories.Id;
         public string Title { get; set; } = "FFmpeg Tools";
+        IEnumerable<IAnalogyCustomAction> IAnalogyCustomActionsFactory.Actions => Actions;
 
-        public IEnumerable<IAnalogyCustomAction> Actions { get; } = new List<IAnalogyCustomAction>
+        public IEnumerable<IAnalogyCustomActionWinForms> Actions { get; } = new List<IAnalogyCustomActionWinForms>
         {
             //new Action1()
         };

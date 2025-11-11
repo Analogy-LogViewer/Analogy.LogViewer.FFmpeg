@@ -1,4 +1,6 @@
 ﻿using Analogy.Interfaces;
+using Analogy.Interfaces.DataTypes;
+using Analogy.Interfaces.WinForms;
 using Analogy.LogViewer.FFmpeg.Properties;
 using Analogy.LogViewer.Template;
 using System;
@@ -7,7 +9,7 @@ using System.Drawing;
 
 namespace Analogy.LogViewer.FFmpeg.IAnalogy
 {
-    public class FFmpegFactories : PrimaryFactory
+    public class FFmpegFactories : PrimaryFactoryWinForms
     {
         internal static Guid Id = new Guid("5d82cf23-bc2b-4ca7-a18c-19cd9b27dd30");
         public override Guid FactoryId { get; set; } = Id;
@@ -24,12 +26,12 @@ namespace Analogy.LogViewer.FFmpeg.IAnalogy
         }
     }
 
-    public class DataSourceFactory : DataProvidersFactory
+    public class DataSourceFactory : DataProvidersFactoryWinForms
     {
         public override Guid FactoryId { get; set; } = FFmpegFactories.Id;
         public override string Title { get; set; } = "FFmpeg Tools";
 
-        public override IEnumerable<IAnalogyDataProvider> DataProviders { get; set; } = new List<IAnalogyDataProvider>
+        public override IEnumerable<IAnalogyDataProviderWinForms> DataProviders { get; set; } = new List<IAnalogyDataProviderWinForms>
         {
         };
     }
