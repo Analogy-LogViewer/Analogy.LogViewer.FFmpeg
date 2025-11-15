@@ -1,6 +1,6 @@
-﻿using Analogy.Interfaces;
-using Analogy.LogViewer.FFmpeg.Properties;
+﻿using Analogy.LogViewer.FFmpeg.Properties;
 using Analogy.LogViewer.FFmpeg.UserControls;
+using Analogy.LogViewer.Template.WinForms;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Drawing;
@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Analogy.LogViewer.FFmpeg.IAnalogy
 {
-    public class FFmpegUserSettingsFactory : Analogy.LogViewer.Template.TemplateUserSettingsFactoryWinForms
+    public class FFmpegUserSettingsFactory : TemplateUserSettingsFactoryWinForms
     {
         public override Guid FactoryId { get; set; } = FFmpegFactories.Id;
         public override Guid Id { get; set; } = new Guid("c84a5f45-c6a6-423a-86c2-a650581da0bf");

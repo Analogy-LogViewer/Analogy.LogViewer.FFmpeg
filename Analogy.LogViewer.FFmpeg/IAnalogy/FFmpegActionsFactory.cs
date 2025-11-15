@@ -5,19 +5,19 @@ using Analogy.Interfaces.WinForms;
 using Analogy.Interfaces.WinForms.Factories;
 using Analogy.LogViewer.FFmpeg.Properties;
 using Analogy.LogViewer.Template.Managers;
+using Analogy.LogViewer.Template.WinForms;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 
 namespace Analogy.LogViewer.FFmpeg.IAnalogy
 {
-    public class FFmpegActionsFactory : IAnalogyCustomActionsFactoryWinForms
+    public class FFmpegActionsFactory : CustomActionsFactoryWinForms
     {
-        public Guid FactoryId { get; set; } = FFmpegFactories.Id;
-        public string Title { get; set; } = "FFmpeg Tools";
-        IEnumerable<IAnalogyCustomAction> IAnalogyCustomActionsFactory.Actions => Actions;
+        public override Guid FactoryId { get; set; } = FFmpegFactories.Id;
+        public override string Title { get; set; } = "FFmpeg Tools";
 
-        public IEnumerable<IAnalogyCustomActionWinForms> Actions { get; } = new List<IAnalogyCustomActionWinForms>
+        public override IEnumerable<IAnalogyCustomAction> Actions { get; } = new List<IAnalogyCustomAction>
         {
             //new Action1()
         };

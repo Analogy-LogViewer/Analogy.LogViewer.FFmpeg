@@ -19,7 +19,7 @@ namespace Analogy.LogViewer.FFmpeg.IAnalogy
         public Image? SmallImage { get; set; } = Resources.ffmpeg16x16;
         public Image? LargeImage { get; set; } = Resources.ffmpeg32x32;
         public string Title { get; set; } = "FF Tools";
-        public AnalogyToolTipWinForms? ToolTip { get; set; }
+        public AnalogyToolTipWithImages? ToolTip { get; set; }
 
         public Task InitializeUserControl(Control hostingControl, ILogger logger)
         {
