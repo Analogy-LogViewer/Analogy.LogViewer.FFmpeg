@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 	<PropertyGroup>
 		<TargetFrameworks>net10.0-windows;net9.0-windows;net8.0-windows;net48</TargetFrameworks>
-		<VersionPrefix>9.0.4</VersionPrefix>
+		<VersionPrefix>9.0.6</VersionPrefix>
 		<VersionSuffix></VersionSuffix>
 		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
 		<AssemblyTitle>Analogy.LogViewer.FFmpeg</AssemblyTitle>
@@ -41,13 +41,14 @@
 		</EmbeddedResource>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Analogy.LogViewer.Interfaces.WinForms" Version="9.0.4" />
-		<PackageReference Include="Analogy.LogViewer.Template" Version="9.0.3" />
-		<PackageReference Include="Analogy.LogViewer.Template.WinForms" Version="9.0.4" />
-		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="9.0.2" />
+		<PackageReference Include="Analogy.LogViewer.Interfaces.WinForms" Version="9.0.6" />
+		<PackageReference Include="Analogy.LogViewer.Template" Version="9.0.6" />
+		<PackageReference Include="Analogy.LogViewer.Template.WinForms" Version="9.0.6" />
+		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="9.0.6" />
 		<PackageReference Include="FFMpegCore" Version="5.4.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
-		<PackageReference Include="System.Text.Json" Version="10.0.7" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.300" PrivateAssets="All" />
+		<PackageReference Include="System.Text.Json" Version="10.0.9" />
 		<PackageReference Include="System.Threading.Tasks.Extensions">
 			<Version>4.6.3</Version>
 		</PackageReference>
